@@ -131,7 +131,7 @@ namespace PackForIP
 
             var assemblies = Directory.GetFiles(BuildFolder, "*.dll");
 
-            var regices = platform == "opemod" ? ExcludeAssemblies.BuildOpenmodRegices() : ExcludeAssemblies.BuildRocketmodRegices();
+            var regices = platform == "openmod" ? ExcludeAssemblies.BuildOpenmodRegices() : ExcludeAssemblies.BuildRocketmodRegices();
 
             var validAsms = new List<string>();
 
